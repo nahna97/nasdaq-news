@@ -71,7 +71,11 @@ def get_news_sentiment(ticker):
         return pd.Series({'Positive': 0, 'Negative': 0, 'Neutral': 0})
 
 # Sidebar filters
-selected_tickers = st.sidebar.multiselect("Select Nasdaq-100 Tickers", options=nasdaq_100, default=["QQQ", "AAPL", "MSFT", "NVDA"])
+selected_tickers = st.sidebar.multiselect(
+    "Select Nasdaq-100 Tickers", 
+    options=nasdaq_100, 
+    default=["AAPL", "MSFT", "NVDA"]
+)
 show_earnings = st.sidebar.checkbox("Show Earnings Calendar", value=True)
 
 # Display earnings
