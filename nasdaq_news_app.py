@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 from datetime import datetime, timedelta
 
-FMP_API_KEY = 'your_fmp_api_key_here'
+FMP_API_KEY = 'zHLUFb49obS6qILBHZOE8rXaxXF3yJt3'
 NEWS_API_KEY = 'b6f17f92-f77c-46fc-a277-fdded4d318b7'
 
 nasdaq_100 = sorted(list(set([
